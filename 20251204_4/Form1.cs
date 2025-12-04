@@ -15,10 +15,7 @@ namespace _20251204_4
             animal.Speak();
             ((Dog)animal1).SpeakDog("¸Û¸Û");  // ´Ù¿îÄ³½ºÆÃ
             ((Cat)animal2).SpeakCat("¾ß¿Ë");  // ´Ù¿îÄ³½ºÆÃ
-            ((Brid)animal3).SpeakBird("Â±Â±");  // ´Ù¿îÄ³½ºÆÃ
-
-
-
+            ((Bird)animal3).SpeakBird("Â±Â±");  // ´Ù¿îÄ³½ºÆÃ
         }
     }
 
@@ -52,9 +49,9 @@ namespace _20251204_4
             Console.WriteLine($"{Name}: °í¾çÀÌ°¡ {a} ¼Ò¸®¸¦ ³À´Ï´Ù.");
         }
     }
-    public class Brid : Animal
+    public class Bird : Animal
     {
-        public Brid() : base("Â±Â±ÀÌ") { }
+        public Bird() : base("Â±Â±ÀÌ") { }
         public void SpeakBird(string a)
         {
             Console.WriteLine($"{Name}: »õ°¡ {a} ¼Ò¸®¸¦ ³À´Ï´Ù.");
